@@ -20,17 +20,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout gh-pages branch to root
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-
-      - name: Checkout main branch to GEHU
+      - name: Checkout main branch
         uses: actions/checkout@v4
         with:
           ref: main
-          clean: false
-          path: GEHU
 
       - name: Set up node
         uses: actions/setup-node@v4
@@ -41,13 +34,13 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Build Astro Site
-        run: cd GEHU && npm install && npm run build
+        run: npm install && npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: "./GEHU/dist"
+          path: "./dist"
 
   # Deployment job
   deploy:
