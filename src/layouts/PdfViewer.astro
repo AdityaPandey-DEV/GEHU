@@ -9,8 +9,8 @@ interface Props {
 
 const { entry } = Astro.props;
 
-const link = `https://raw.githubusercontent.com/gehuhaldwani/pyqs/main${entry.path.replace("/pyqs", "").replaceAll(" ", "%20")}`;
-const thumbnail = `https://raw.githubusercontent.com/gehuhaldwani/pyqs/refs/heads/thumbnails${entry.path.replace("/pyqs", "").replaceAll(" ", "%20").replace(".pdf", ".webp")}`;
+const link = `https://raw.githubusercontent.com/AdityaPandey-DEV/GEHU/main${entry.path.replaceAll(" ", "%20")}`;
+const thumbnail = `https://raw.githubusercontent.com/AdityaPandey-DEV/GEHU/refs/heads/thumbnails${entry.path.replaceAll(" ", "%20").replace(".pdf", ".webp")}`;
 const pdfJsPath = addBaseUrl("vendor/pdfjs");
 
 const scriptElement = `		

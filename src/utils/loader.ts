@@ -6,7 +6,7 @@ import path from "node:path";
 const fileNamePattern =
 	/^(?<subject_code>[a-zA-Z0-9]+)_(?:(?<specialization_code>[a-zA-Z0-9]+)_)?(?<type>(?:midsem)|(?:endsem))_(?:(?<back>back)_)?(?<year>20[0-9]{2})(?:_(?<month>(?:jan)|(?:feb)|(?:mar)|(?:apr)|(?:may)|(?:jun)|(?:jul)|(?:aug)|(?:sep)|(?:oct)|(?:nov)|(?:dec)))?(?:_(?<date>[0-9]{1,2}))?(?:_set(?<set>[a-zA-Z0-9]+))?$/;
 
-const ROOT_FOLDER = "pyqs";
+const ROOT_FOLDER = ".";
 const MONTHS = [
 	"jan",
 	"feb",
