@@ -1,6 +1,8 @@
 .vscode
 node_modules/
 dist/
+public/
+src/
 *.log
 .env
 .env.local
