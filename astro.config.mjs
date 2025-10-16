@@ -14,5 +14,10 @@ export default defineConfig({
 	integrations: [sitemap(), icon(), mdx()],
 	vite: {
 		plugins: [tailwindcss()],
+		publicDir: "public",
 	},
+	build: {
+		assets: "_astro",
+	},
+	output: "static",
 });
