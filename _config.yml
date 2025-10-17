@@ -1,0 +1,33 @@
+# GitHub Pages configuration
+source: dist
+destination: _site
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+theme: jekyll-theme-primer
+
+# Exclude files from processing
+exclude:
+  - src/
+  - astro.config.mjs
+  - package.json
+  - package-lock.json
+  - pnpm-lock.yaml
+  - tsconfig.json
+  - starwind.config.json
+  - node_modules/
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .jekyllignore
+
+# Include files
+include:
+  - dist/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
