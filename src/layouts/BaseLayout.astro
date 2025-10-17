@@ -1,0 +1,14 @@
+---
+import Head, { type Props } from "@/components/partials/Head.astro";
+import "@/styles/starwind.css";
+import "@/styles/globals.css";
+---
+
+<html lang="en">
+	<head>
+		<Head {...Astro.props} />
+	</head>
+	<body class="min-h-screen">
+		<slot />
+	</body>
+</html>

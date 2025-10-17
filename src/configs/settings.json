@@ -1,0 +1,17 @@
+{
+  "title": "PYQs Archive",
+  "description": "A collection of student contributed previous year question papers for Graphic Era Hill University semester examinations.",
+  "site": "https://adityapandey-dev.github.io/GEHU",
+  "favicon": "/favicon.ico",
+  "logo": "/logo.png",
+  "navigation": [
+    {
+      "name": "Contribute",
+      "url": "/contribute"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    }
+  ]
+}
